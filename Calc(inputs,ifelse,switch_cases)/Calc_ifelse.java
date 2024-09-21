@@ -15,9 +15,31 @@ public class Calc_Ifelse
 
         if (operation.equals("sum"))
         {
-          System.out.print
+          System.out.printf("%f + %f = %f",num1,num2,num1+num2);
         }
-        
+        else if (operation.equals("sub"))
+        {
+          System.out.printf("%f - %f = %f",num1,num2,num1-num2);
+        }
+        else if (operation.equals("mul"))
+        {
+          System.out.printf("%f * %f = %f",num1,num2,num1*num2);
+        }
+        else if (operation.equals("div"))
+        {
+          if (num2 == 0)
+          {
+            System.out.print("Cannot divide by zero");
+          }
+          else
+          {
+            System.out.printf("%f / %f = %f",num1,num2,num1/num2);
+          }
+        }
+        else
+        {
+          System.out.printf("%s operation is not supported",operation);
+        }
         input.close();
       }
   }
