@@ -45,6 +45,9 @@ public class Creating_array
         int copyofnum[] = Arrays.copyOf(num,num.length);//length can be manually stated or can be clever while copying and use array_name.length
         //int copyofnum[] = Arrays.copyOf(num,starting index,ending index);
         //can use the above one dosent need length now as we did define index's
+        System.out.println(Arrays.equals(num,copyofnum));
+        //Syntax to check if arrays is equal to another array gives boolean output
+        
     }
     
 }
